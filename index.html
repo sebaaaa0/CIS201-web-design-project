@@ -1,108 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Velvet Bean Cafe | Home</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Whiskers &amp; Beans Cat Cafe</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript">
+    function showToday() {
+      document.getElementById("visitInfo").innerHTML = "Today's date & time: " + Date();
+      document.getElementById("visitInfo").style.color = "#6b4423";
+    }
+  </script>
 </head>
 <body>
-
-  <!-- Shared Header & Navigation Menu (Keep identical across all 4+ pages) -->
-  <header class="site-header">
-    <div class="header-inner">
-      <h1 class="logo">Velvet Bean Cafe</h1>
-      <nav aria-label="Main Navigation">
-        <ul class="nav-list">
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="order.html">Order &amp; Contact</a></li>
-        </ul>
-      </nav>
+  <div id="container">
+    <div id="header">
+      <h1>Whiskers &amp; Beans Cat Cafe</h1>
+      <p class="tagline">Specialty Coffee &amp; Cozy Rescue Cats</p>
     </div>
-  </header>
 
-  <main>
-    <!-- Hero Banner -->
-    <section class="hero">
-      <div class="hero-text">
-        <p id="today-date" class="date-badge"></p>
-        <h2>Handcrafted Coffee &amp; Freshly Baked Pastries</h2>
-        <p>Welcome to Velvet Bean Cafe—a cozy neighborhood spot for specialty espresso, matcha, and warm treats baked every morning.</p>
-        <div class="hero-actions">
-          <a href="menu.html" class="btn">Explore Menu</a>
-          <a href="order.html" class="btn btn-outline">Order Online</a>
-        </div>
-      </div>
-      <div class="hero-image">
-        <img src="images/hero-cafe.jpg" alt="Warm cup of latte art on a wooden cafe table">
-      </div>
-    </section>
+    <div id="nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cats.html">Cats</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Booking &amp; Contact</a>
+    </div>
 
-    <!-- JS Feature: Show/Hide Daily Promo -->
-    <section class="promo-section">
-      <button type="button" id="toggle-special-btn" class="btn">Show Today's Special</button>
-      <div id="special-box" class="special-box" style="display: none;">
-        <h3>Today's Barista Special</h3>
-        <p>Order any signature iced latte with a warm pistachio croissant for <strong>28 SAR</strong> before 12:00 PM.</p>
-      </div>
-    </section>
 
-    <!-- Featured Drinks & Pastries -->
-    <section class="featured">
-      <h2>Customer Favorites</h2>
-      <p>Made to order with freshly roasted beans and quality ingredients.</p>
+    <div class="card center-box">
+      <h2>Welcome to Our Cat Lounge</h2>
+      <p>
+        Sip warm lattes while spending time with our friendly resident cats.
+        Open daily from <span class="highlight">9:00 AM</span> to <span class="highlight">10:00 PM</span>.
+      </p>
+      <img src="images/catcafe.jpg" alt="Cat Cafe sign" width="300" />
+    </div>
 
-      <div class="cards">
-        <article class="card">
-          <img id="featured-img" src="images/spanish-latte.jpg" alt="Iced Spanish Latte">
-          <h3 id="featured-title">Iced Spanish Latte</h3>
-          <p id="featured-desc">Double espresso poured over chilled milk and sweet condensed milk.</p>
-          <button type="button" id="swap-drink-btn" class="btn btn-small">Next Signature Drink</button>
-        </article>
 
-        <article class="card">
-          <img src="images/croissant.jpg" alt="Freshly baked butter croissant">
-          <h3>Butter &amp; Almond Croissants</h3>
-          <p>Flaky, golden layers baked fresh every morning at 6:30 AM.</p>
-          <ul>
-            <li>Classic French Butter</li>
-            <li>Toasted Almond Cream</li>
-            <li>Dark Chocolate Filled</li>
-          </ul>
-        </article>
+    <div class="card">
+      <h3>Lounge Guidelines</h3>
+      <ul>
+        <li>Sanitize your hands before entering the cat lounge.</li>
+        <li>Let sleeping cats rest without waking them.</li>
+        <li>Keep voices soft so the cats feel safe.</li>
+      </ul>
+    </div>
 
-        <article class="card">
-          <img src="images/matcha.jpg" alt="Iced ceremonial matcha latte">
-          <h3>Ceremonial Matcha</h3>
-          <p>Whisked ceremonial-grade green tea served hot or over ice.</p>
-          <ul>
-            <li>Classic Oat Matcha</li>
-            <li>Vanilla Cold Foam Matcha</li>
-            <li>Strawberry Matcha Latte</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+    <div class="card">
+      <h3>Session Rates</h3>
+      <table>
+        <caption>Cat Lounge Passes</caption>
+        <thead>
+          <tr>
+            <th>Pass Type</th>
+            <th>Duration</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Standard Cuddle Pass</td>
+            <td>1 Hour</td>
+            <td>35 SAR</td>
+          </tr>
+          <tr>
+            <td>Study &amp; Purr Pass</td>
+            <td>2 Hours</td>
+            <td>60 SAR</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-    <!-- How Online Pickup Works -->
-    <section class="steps-section">
-      <h2>How Online Pickup Works</h2>
-      <ol>
-        <li>Browse our drinks and pastries on the <a href="menu.html">Menu</a> page.</li>
-        <li>Fill out your selection on the <a href="order.html">Order &amp; Contact</a> form.</li>
-        <li>Pick up your order fresh at the counter with zero wait time.</li>
-      </ol>
-    </section>
-  </main>
+    <div class="card center-box">
+      <h3>Plan Your Visit</h3>
+      <button onclick="showToday()">Check Current Date &amp; Time</button>
+      <p id="visitInfo">Click the button to check live date &amp; time.</p>
+    </div>
 
-  <!-- Shared Footer (Keep identical across all 4+ pages) -->
-  <footer class="site-footer">
-    <p><strong>Velvet Bean Cafe</strong> &bull; Open Daily: 7:00 AM – 11:00 PM &bull; Riyadh</p>
-    <p>&copy; 2026 Velvet Bean Cafe. CIS 201 Web Design Project.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <div id="footer">
+      <p>Whiskers &amp; Beans Cat Cafe | Riyadh | &copy; 2026</p>
+    </div>
+  </div>
 </body>
 </html>
