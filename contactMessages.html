@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Messages - Whiskers & Beans</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script type="text/javascript">
+        function displayMessage() {
+
+            var information = new URLSearchParams(window.location.search);
+
+            document.getElementById("name").textContent = information.get("name");
+            document.getElementById("email").textContent = information.get("email");
+            document.getElementById("phone").textContent = information.get("phone");
+            document.getElementById("message").textContent = information.get("message");
+
+        }
+    </script>
+</head>
+
+<body onload="displayMessage()">
+
+<div id="container">
+
+    <div id="header">
+        <h1>Whiskers &amp; Beans Cat Cafe</h1>
+        <p class="tagline">Specialty Coffee &amp; Cozy Rescue Cats</p>
+    </div>
+
+    <div id="nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="cats.html">Cats</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Booking &amp; Contact</a>
+    </div>
+
+    <div class="card center-box">
+
+        <h2>Submitted Contact Information</h2>
+
+        <p><strong>Name:</strong> <span id="name"></span></p>
+
+        <p><strong>Email:</strong> <span id="email"></span></p>
+
+        <p><strong>Phone Number:</strong> <span id="phone"></span></p>
+
+        <p><strong>Message:</strong> <span id="message"></span></p>
+
+        <p>Thank you for contacting Whiskers &amp; Beans!</p>
+
+        <a href="contact.html">Back to Contact Us</a>
+
+    </div>
+
+    <div id="footer">
+        <p>Whiskers &amp; Beans Cat Cafe | Riyadh | &copy; 2026</p>
+    </div>
+
+</div>
+
+</body>
+</html>
