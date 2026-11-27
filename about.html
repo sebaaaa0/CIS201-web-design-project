@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About Us - Whiskers &amp; Beans Cat Cafe</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/javascript">
+    function toggleFact() {
+      var box = document.getElementById("funFact");
+      if (box.style.display === "none") {
+        box.style.display = "block";
+      } else {
+        box.style.display = "none";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1>Whiskers &amp; Beans Cat Cafe</h1>
+      <p class="tagline">Specialty Coffee &amp; Cozy Rescue Cats</p>
+    </div>
+
+    <div id="nav">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="cats.html">Cats</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Booking &amp; Contact</a>
+    </div>
+
+    <div class="card">
+      <h2>About Whiskers &amp; Beans</h2>
+      <p>
+        Founded in <span class="highlight">2026 in Riyadh</span>, Whiskers &amp; Beans Cat Cafe brings together
+        specialty coffee and rescued cats in one warm, relaxing space. Our goal is to give guests a calm place
+        to study or unwind while helping local rescue cats feel safe and loved.
+      </p>
+      <blockquote>
+        &quot;A cup of coffee is even better when a sleepy cat curls up beside your chair.&quot;
+        <cite>- Whiskers &amp; Beans Team</cite>
+      </blockquote>
+    </div>
+
+    <div class="card">
+      <h3>How a Visit Works</h3>
+      <ol>
+        <li>Check in at the front counter and order your favorite drink.</li>
+        <li>Sanitize your hands and remove your shoes at the Cafe entrance.</li>
+        <li>Enjoy your time with Pumpkin, Oreo, Luna, and Mocha!</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h3>What Makes Us Special</h3>
+      <dl>
+        <dt><strong>Rescue Partnership</strong></dt>
+        <dd>All four of our resident cats were rescued locally and receive regular vet care.</dd>
+        <dt><strong>Separate Cafe &amp; Seating Zones</strong></dt>
+        <dd>Our espresso bar is kept separate from the cat play area for hygiene and comfort.</dd>
+        <dt><strong>Study friendly Corners</strong></dt>
+        <dd>Quiet tables with soft lighting just watch out for Oreo near your pens!</dd>
+      </dl>
+    </div>
+
+    <div class="card center-box">
+      <h3>Cafe Fun Fact</h3>
+      <button onclick="toggleFact()">Show / Hide Fun Fact</button>
+      <p id="funFact" style="display: none;">
+        Over <strong>120 cups</strong> of iced Spanish latte are served every weekend while Oreo knocks at least 5 napkins onto the floor!
+      </p>
+    </div>
+
+    <div id="footer">
+      <p>Whiskers &amp; Beans Cat Cafe | Riyadh | &copy; 2026</p>
+    </div>
+  </div>
+</body>
+</html>
