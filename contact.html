@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Booking & Contact - Whiskers & Beans</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script type="text/javascript">
+        function sendMessage() {
+            document.getElementById("result").innerHTML =
+            "Thank you for contacting Whiskers & Beans! We will get back to you soon.";
+        }
+    </script>
+</head>
+
+<body>
+
+<div id="container">
+
+    <div id="header">
+        <h1>Whiskers &amp; Beans Cat Cafe</h1>
+        <p class="tagline">Specialty Coffee &amp; Cozy Rescue Cats</p>
+    </div>
+
+    <div id="nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="cats.html">Cats</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Booking &amp; Contact</a>
+    </div>
+
+    <div class="card center-box">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you!</p>
+
+        <img src="contact.jpg" alt="Cat at Whiskers and Beans Cafe" width="300" />
+
+        <h3>Visit Our Cafe</h3>
+        <p><strong>Location:</strong> Riyadh, Saudi Arabia</p>
+        <p><strong>Opening Hours:</strong> Saturday - Thursday, 9 AM - 11 PM</p>
+        <p><strong>Friday:</strong> 2 PM - 11 PM</p>
+
+        <h3>Book a Visit</h3>
+
+        <form>
+            <p>
+                Name:
+                <input type="text" name="name" />
+            </p>
+
+            <p>
+                Email:
+                <input type="text" name="email" />
+            </p>
+
+            <p>
+                Phone Number:
+                <input type="text" name="phone" />
+            </p>
+
+            <p>
+                Message:
+                <textarea name="message" rows="5" cols="30"></textarea>
+            </p>
+
+            <button type="button" onclick="sendMessage()">Submit</button>
+        </form>
+
+        <p id="result"></p>
+    </div>
+
+    <div id="footer">
+        <p>Whiskers &amp; Beans Cat Cafe | Riyadh | &copy; 2026</p>
+    </div>
+
+</div>
+
+</body>
+</html>
