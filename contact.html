@@ -4,13 +4,6 @@
     <title>Booking & Contact - Whiskers & Beans</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-
-    <script type="text/javascript">
-        function sendMessage() {
-            document.getElementById("result").innerHTML =
-            "Thank you for contacting Whiskers & Beans! We will get back to you soon.";
-        }
-    </script>
 </head>
 
 <body>
@@ -38,20 +31,20 @@
 
         <h3>Visit Our Cafe</h3>
         <p><strong>Location:</strong> Riyadh, Saudi Arabia</p>
-        <p><strong>Opening Hours:</strong> Sunday - saturday, 9 AM - 10 PM</p>
-       
+        <p><strong>Opening Hours:</strong> Sunday - Saturday, 9 AM - 10 PM</p>
 
         <h3>Book a Visit</h3>
 
-        <form>
+        <form action="contactMessages.html" method="get">
+
             <p>
                 Name:
-                <input type="text" name="name" />
+                <input type="text" name="name" required />
             </p>
 
             <p>
                 Email:
-                <input type="text" name="email" />
+                <input type="text" name="email" required />
             </p>
 
             <p>
@@ -64,10 +57,9 @@
                 <textarea name="message" rows="5" cols="30"></textarea>
             </p>
 
-            <button type="button" onclick="sendMessage()">Submit</button>
-        </form>
+            <button type="submit">Submit</button>
 
-        <p id="result"></p>
+        </form>
     </div>
 
     <div id="footer">
