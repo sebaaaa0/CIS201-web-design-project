@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Menu - Whiskers & Beans</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script type="text/javascript">
+        function showSpecial() {
+            document.getElementById("special").innerHTML =
+            "Today's Special is Strawberry Matcha for only 25 SAR!";
+        }
+    </script>
+</head>
+
+<body>
+
+<div id="container">
+
+    <div id="header">
+        <h1>Whiskers &amp; Beans Cat Cafe</h1>
+        <p class="tagline">Specialty Coffee &amp; Cozy Rescue Cats</p>
+    </div>
+
+    <div id="nav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="cats.html">Cats</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Booking &amp; Contact</a>
+    </div>
+
+    <div class="card center-box">
+        <h2>Our Menu</h2>
+        <p>Enjoy our delicious drinks and treats while spending time with our lovely cats!</p>
+
+        <img src="images/menu.jpg" alt="Coffee and desserts" width="350" />
+    </div>
+
+    <div class="card">
+        <h2>Hot Drinks</h2>
+
+        <table>
+            <tr>
+                <th>Drink</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td>Spanish Latte</td>
+                <td>22 SAR</td>
+            </tr>
+
+            <tr>
+                <td>Caramel Latte</td>
+                <td>20 SAR</td>
+            </tr>
+
+            <tr>
+                <td>Americano</td>
+                <td>15 SAR</td>
+            </tr>
+
+            <tr>
+                <td>Hot Chocolate</td>
+                <td>18 SAR</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Iced Drinks &amp; Matcha</h2>
+
+        <table>
+            <tr>
+                <th>Drink</th>
+                <th>Price</th>
+            </tr>
+
+            <tr>
+                <td>Iced Spanish Latte</td>
+                <td>23 SAR</td>
+            </tr>
+
+            <tr>
+                <td>Iced Matcha Latte</td>
+                <td>24 SAR</td>
+            </tr>
+
+            <tr>
+                <td>Strawberry Matcha</td>
+                <td>27 SAR</td>
+            </tr>
+
+            <tr>
+                <td>Iced Americano</td>
+                <td>16 SAR</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>Desserts</h2>
+
+        <ul>
+            <li>Chocolate Brownie - 16 SAR</li>
+            <li>Butter Croissant - 14 SAR</li>
+            <li>Chocolate Cookie - 10 SAR</li>
+            <li>Cheesecake - 22 SAR</li>
+        </ul>
+    </div>
+
+    <div class="card center-box">
+        <h2>Today's Special</h2>
+
+        <button onclick="showSpecial()">See Today's Special</button>
+
+        <p id="special"></p>
+    </div>
+
+    <div id="footer">
+        <p>Whiskers &amp; Beans Cat Cafe | Riyadh | &copy; 2026</p>
+    </div>
+
+</div>
+
+</body>
+</html>
